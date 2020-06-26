@@ -1,0 +1,227 @@
+.tx-pb-social .pb-list {
+  position: relative;
+  width: 100%;
+  margin: 10px 0 0 -10px;
+}
+.tx-pb-social .pb-list .col {
+  float: left;
+  width: 250px;
+}
+.tx-pb-social .pb-list-item {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  width: 250px;
+  height: 250px;
+  margin: 10px 0 0 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.tx-pb-social .pb-list-item .image {
+  position: absolute;
+  height: 250px;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  cursor: pointer;
+}
+.tx-pb-social .pb-list-item .icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 32px;
+  width: 32px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-size: 32px 32px;
+}
+.tx-pb-social .pb-list-item .text {
+  position: absolute;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 10px 10px 25px 10px;
+  height: 80px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
+}
+.tx-pb-social .pb-list-item .text:hover {
+  text-decoration: underline;
+}
+.tx-pb-social .pb-list-item .additional-info {
+  box-sizing: border-box;
+  position: absolute;
+  color: #ffffff;
+  width: 30px;
+  height: 20px;
+  bottom: 2px;
+  text-align: right;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+.tx-pb-social .pb-list-item .additional-info.info-1 {
+  right: 65px;
+}
+.tx-pb-social .pb-list-item .additional-info.info-2 {
+  right: 20px;
+}
+.tx-pb-social .pb-list-item .video-overlay {
+  position: absolute;
+  bottom: 95px;
+  left: 95px;
+  width: 64px;
+  height: 64px;
+  opacity: 0.90;
+  cursor: pointer;
+}
+.tx-pb-social .pb-list-item[data-type="video"] .image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+.tx-pb-social .pb-list-item[data-type="video"] .video-overlay {
+  top: 95px;
+  bottom: auto;
+}
+.tx-pb-social .pb-list-item-facebook .placeholder-image {
+  background-image: url("../Icons/Placeholder/fb.jpg");
+}
+.tx-pb-social .pb-list-item-facebook .icon {
+  background-image: url("../Icons/facebook.png");
+}
+.tx-pb-social .pb-list-item-googleplus .placeholder-image {
+  background-image: url("../Icons/Placeholder/gplus.jpg");
+}
+.tx-pb-social .pb-list-item-googleplus .icon {
+  background-image: url("../Icons/google+.png");
+}
+.tx-pb-social .pb-list-item-instagram .icon {
+  background-image: url("../Icons/instagram.png");
+}
+.tx-pb-social .pb-list-item-linkedin .placeholder-image {
+  background-image: url("../Icons/Placeholder/linkedin.jpg");
+}
+.tx-pb-social .pb-list-item-linkedin .icon {
+  background-image: url("../Icons/linkedin.png");
+}
+.tx-pb-social .pb-list-item-txnews .placeholder-image {
+  background-image: url("../Icons/Placeholder/default.jpg");
+}
+.tx-pb-social .pb-list-item-txnews .icon {
+  background-image: url("../Icons/typo3.png");
+}
+.tx-pb-social .pb-list-item-pinterest .icon {
+  background-image: url("../Icons/pinterest.png");
+}
+.tx-pb-social .pb-list-item-tumblr .placeholder-image {
+  background-image: url("../Icons/Placeholder/tumblr.jpg");
+}
+.tx-pb-social .pb-list-item-tumblr .icon {
+  background-image: url("../Icons/tumblr.png");
+}
+.tx-pb-social .pb-list-item-twitter .placeholder-image {
+  background-image: url("../Icons/Placeholder/twitter.jpg");
+}
+.tx-pb-social .pb-list-item-twitter .icon {
+  background-image: url("../Icons/twitter.png");
+}
+.tx-pb-social .pb-list-item-imgur .icon {
+  background-image: url("../Icons/imgur.png");
+}
+.tx-pb-social .pb-list-item-youtube .placeholder-image {
+  background-image: url("../Icons/Placeholder/yt.jpg");
+}
+.tx-pb-social .pb-list-item-youtube .icon {
+  background-image: url("../Icons/youtube.png");
+}
+.tx-pb-social .pb-list-item-vimeo .placeholder-image {
+  background-image: url("../Icons/Placeholder/vimeo.png");
+}
+.tx-pb-social .pb-list-item-vimeo .icon {
+  background-image: url("../Icons/vimeo.png");
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-detail-wrap {
+  position: relative;
+  top: 190px;
+  text-align: center;
+  width: 100%;
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details {
+  opacity: 0;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details.active {
+  opacity: 1;
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details span {
+  position: relative;
+  top: 10px;
+  margin: 0 4px 0 5px;
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+  background-size: 12px 12px;
+  background-size: cover;
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details .fb-like-detail__like {
+  background-image: url("../Icons/facebook_reactions/like.png");
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details .fb-like-detail__love {
+  background-image: url("../Icons/facebook_reactions/love.png");
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details .fb-like-detail__haha {
+  background-image: url("../Icons/facebook_reactions/haha.png");
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details .fb-like-detail__wow {
+  background-image: url("../Icons/facebook_reactions/wow.png");
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details .fb-like-detail__sad {
+  background-image: url("../Icons/facebook_reactions/sad.png");
+}
+.tx-pb-social .pb-list-item-facebook .fb-like-details .fb-like-detail__angry {
+  background-image: url("../Icons/facebook_reactions/angry.png");
+}
+.tx-pb-social .button {
+  display: inline-block;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 30px;
+  width: 300px;
+  padding-top: 15px;
+  border: 1px solid black;
+}
+.tx-pb-social .button.loading {
+  border: none;
+  color: white;
+  background-color: darkgray;
+  cursor: progress;
+}
+.tx-pb-social .button.pb-disabled {
+  visibility: hidden;
+}
+.tx-pb-social .button__wrap {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.tx-pb-social .pb-hide-initial {
+  display: none;
+}

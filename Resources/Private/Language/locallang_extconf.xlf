@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-05-17T13:19:00Z" product-name="pb_social">
+        <header/>
+        <body>
+            <trans-unit id="general">
+                <source>General options</source>
+            </trans-unit>
+            <trans-unit id="general.external_link">
+                <source>Notice: All credentials can be set globally in here - or can be overridden by *individual plugin* settings. Questions? Please contact https://www.plusb.de</source>
+            </trans-unit>
+            <trans-unit id="general.devmod">
+                <source>enable devmode: database cache will refresh every pageload.</source>
+            </trans-unit>
+            <trans-unit id="general.ignoreVerifySSL">
+                <source>Ignore Verify SSL. Activating this checkbox might be a potential security risk!</source>
+            </trans-unit>
+
+            <trans-unit id="facebook">
+                <source>Facebook</source>
+            </trans-unit>
+            <trans-unit id="facebook.intro">
+                <source>Facebook</source>
+            </trans-unit>
+            <trans-unit id="facebook.api.id">
+                <source>app id</source>
+            </trans-unit>
+            <trans-unit id="facebook.api.secret">
+                <source>app secret</source>
+            </trans-unit>
+            <trans-unit id="facebook.api.pageaccesstoken">
+                <source>'Never' expiring Facebook long lived page access token</source>
+            </trans-unit>
+
+            <trans-unit id="instagram">
+                <source>Instagram</source>
+            </trans-unit>
+            <trans-unit id="instagram.intro">
+                <source>Instagram</source>
+            </trans-unit>
+            <trans-unit id="instagram.client.id">
+                <source>client id</source>
+            </trans-unit>
+            <trans-unit id="instagram.client.secret">
+                <source>client secret</source>
+            </trans-unit>
+            <trans-unit id="instagram.client.callback">
+                <source>redirect uri</source>
+            </trans-unit>
+            <trans-unit id="instagram.client.access_code">
+                <source>Instagram code: please see Readme.md</source>
+            </trans-unit>
+            <trans-unit id="instagram.client.access_token">
+                <source>Instagram access token: please see Readme.md</source>
+            </trans-unit>
+
+            <trans-unit id="twitter">
+                <source>Twitter</source>
+            </trans-unit>
+            <trans-unit id="twitter.intro">
+                <source>Twitter</source>
+            </trans-unit>
+            <trans-unit id="twitter.consumer.key">
+                <source>consumer key</source>
+            </trans-unit>
+            <trans-unit id="twitter.consumer.secret">
+                <source>consumer secret</source>
+            </trans-unit>
+            <trans-unit id="twitter.oauth.access.token">
+                <source>oauth access token</source>
+            </trans-unit>
+            <trans-unit id="twitter.oauth.access.token_secret">
+                <source>oauth access token secret</source>
+            </trans-unit>
+
+            <trans-unit id="youtube">
+                <source>Youtube</source>
+            </trans-unit>
+            <trans-unit id="youtube.intro">
+                <source>Youtube</source>
+            </trans-unit>
+            <trans-unit id="youtube.apikey">
+                <source>access token</source>
+            </trans-unit>
+
+            <trans-unit id="vimeo">
+                <source>Vimeo</source>
+            </trans-unit>
+            <trans-unit id="vimeo.intro">
+                <source>Vimeo</source>
+            </trans-unit>
+            <trans-unit id="vimeo.client.identifier">
+                <source>client identifier</source>
+            </trans-unit>
+            <trans-unit id="vimeo.client.secret">
+                <source>client secret</source>
+            </trans-unit>
+            <trans-unit id="vimeo.token">
+                <source>access token</source>
+            </trans-unit>
+
+            <trans-unit id="pinterest">
+                <source>Pinterest</source>
+            </trans-unit>
+            <trans-unit id="pinterest.intro">
+                <source>Pinterest</source>
+            </trans-unit>
+            <trans-unit id="pinterest.app.id">
+                <source>app id</source>
+            </trans-unit>
+            <trans-unit id="pinterest.app.secret">
+                <source>app secret</source>
+            </trans-unit>
+            <trans-unit id="pinterest.app.code">
+                <source>auth code (all characters after "code")</source>
+            </trans-unit>
+
+            <trans-unit id="imgur">
+                <source>Imgur</source>
+            </trans-unit>
+            <trans-unit id="imgur.intro">
+                <source>Imgur</source>
+            </trans-unit>
+            <trans-unit id="imgur.client.id">
+                <source>client id</source>
+            </trans-unit>
+            <trans-unit id="imgur.client.secret">
+                <source>client secret</source>
+            </trans-unit>
+
+            <trans-unit id="tumblr">
+                <source>Tumblr</source>
+            </trans-unit>
+            <trans-unit id="tumblr.intro">
+                <source>Tumblr</source>
+            </trans-unit>
+            <trans-unit id="tumblr.consumer.key">
+                <source>consumer key</source>
+            </trans-unit>
+            <trans-unit id="tumblr.consumer.secret">
+                <source>consumer secret</source>
+            </trans-unit>
+            <trans-unit id="tumblr.token">
+                <source>token</source>
+            </trans-unit>
+            <trans-unit id="tumblr.token_secret">
+                <source>token secret</source>
+            </trans-unit>
+
+            <trans-unit id="linkedin">
+                <source>LinkedIn</source>
+            </trans-unit>
+            <trans-unit id="linkedin.intro">
+                <source>LinkedIn</source>
+            </trans-unit>
+            <trans-unit id="linkedin.client.key">
+                <source>client key</source>
+            </trans-unit>
+            <trans-unit id="linkedin.client.secret">
+                <source>client secret</source>
+            </trans-unit>
+            <trans-unit id="linkedin.client.callback_url">
+                <source>callback url</source>
+            </trans-unit>
+            <trans-unit id="linkedin.access_token">
+                <source>access token: please see Readme.md</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

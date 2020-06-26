@@ -1,0 +1,53 @@
+plugin.tx_pbsocial {
+	view {
+		templateRootPaths.0 = EXT:pb_social/Resources/Private/Templates/
+		templateRootPaths.1 = {$plugin.tx_pbsocial.view.templateRootPath}
+		partialRootPaths.0 = EXT:pb_social/Resources/Private/Partials/
+		partialRootPaths.1 = {$plugin.tx_pbsocial.view.partialRootPath}
+		layoutRootPaths.0 = EXT:pb_social/Resources/Private/Layouts/
+		layoutRootPaths.1 = {$plugin.tx_pbsocial.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_pbsocial.persistence.storagePid}
+		classes {
+			PlusB\PbSocial\Domain\Model\Content {
+				mapping {
+					tableName = tt_content
+				}
+			}
+		}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+    settings{
+        load-jquery = {$plugin.tx_pbsocial.settings.load-jquery}
+		cacheLifetime = {$plugin.tx_pbsocial.settings.cacheLifetime}
+		facebook {
+			# Only use in case you know, what you are doing.
+			# Comma separated List for Facebook request. Please consider change in Partials\Feed\Provider-facebook.html as well!
+			# Important: "id" and "message" are always prepended in this list (so do not repeat).
+			# To pull out your own parameter according to https://developers.facebook.com/docs/workplace/integrations/custom-integrations/reference/,
+			# please fill in Resources/Private/Partials/Feed/Provider-facebook.html as well, always prepending "feed.raw": {feed.raw.my_facebook_parameter_i_desire}
+			# Hint: you as well can add a parameter by using "addToList()" in TypoScript Setup e.g.: plugin.tx_pbsocial.settings.facebook.requestParameterList := addToList(status_type)
+			requestParameterList = {$plugin.tx_pbsocial.settings.facebook.requestParameterList}
+		}
+		# if you include tx_news items into your feed, you have two images: a small icon like any feed of this extension top left corner of teaser square `txnewsIconPath`
+		# and the background image `txnewsDummyImage`. You can use any file path you want, eg /typo3conf/ext/pb_social/Resources/Public/Icons/typo3.png
+		txnewsIconPath = {$plugin.tx_pbsocial.settings.txnewsIconPath}
+		txnewsDummyImage = {$plugin.tx_pbsocial.settings.txnewsDummyImage}
+		txnewsCropBodytextTeaser = {$plugin.tx_pbsocial.settings.txnewsCropBodytextTeaser}
+    }
+}
+
+[globalVar = LIT:1 = {$plugin.tx_pbsocial.settings.load-jquery}]
+    page.includeJS.pbjquery = EXT:pb_social/Resources/Public/Js/jquery-3.3.1.min.js
+[END]
+
+
+page.includeCSS.pbsocialcss = EXT:pb_social/Resources/Public/Css/style.css
+page.includeJSFooter.pbsocialjs = EXT:pb_social/Resources/Public/Js/main.js
+
+#copy to be able to use it in extension
+module.tx_pbsocial < plugin.tx_pbsocial

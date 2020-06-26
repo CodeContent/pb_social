@@ -1,0 +1,9 @@
+<div class="pb-list-item pb-list-item-pinterest pb-hidden" data-type="{feed.raw.type}" data-url="{feed.link}">
+	<div class="image" style="background-image: url({feed.image})"></div>
+	<div class="icon"></div>
+	<f:if condition="{feed.text}">
+		<span class="text">{feed.text}</span>
+	</f:if>
+	<a class="additional-info info-1" href="{feed.link}">{feed.raw.counts.repins}</a>
+	<a class="additional-info info-2" href="{feed.link}">{feed.raw.counts.likes}</a>
+</div>

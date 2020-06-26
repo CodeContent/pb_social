@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-28T16:13:07Z" product-name="pb_social">
+		<header/>
+		<body>
+			<trans-unit id="tx_pbsocial_domain_model_item">
+				<source>Item</source>
+			</trans-unit>
+
+			<trans-unit id="tx_pbsocial_domain_model_item.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_pbsocial_domain_model_item.cacheidentifier">
+				<source>Cacheidentifier</source>
+			</trans-unit>
+			<trans-unit id="tx_pbsocial_domain_model_item.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_pbsocial_domain_model_item.result">
+				<source>Result</source>
+			</trans-unit>
+
+			<trans-unit id="tx_pbsocial_clear_cache">
+				<source>Clear pb_social cache</source>
+			</trans-unit>
+			<trans-unit id="tx_pbsocial_clear_cache_description">
+				<source>Clear cache of extension pb_social and its api results. Any of your pb_social network feed has to be recalled (by front end plugin page reload or scheduler task).
+					Consider individual api request limitations.</source>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,8 @@
+<f:layout name="Default"/>
+<f:section name="main">
+    <div class="pb-list">
+        <f:for each="{feeds}" as="feed">
+            <f:render partial="Feed/Provider-{feed.provider}" arguments="{feed: feed, fb_full_res: fb_full_res}"/>
+        </f:for>
+    </div>
+</f:section>

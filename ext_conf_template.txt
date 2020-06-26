@@ -1,0 +1,109 @@
+## Custom categories
+# customcategory=general=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:general
+# customsubcategory=general=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:general.external_link
+
+# customcategory=facebook=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:facebook
+# customsubcategory=facebook=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:facebook.intro
+
+# customcategory=instagram=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:instagram
+# customsubcategory=instagram=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:instagram.intro
+
+# customcategory=linkedin=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:linkedin
+# customsubcategory=linkedin=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:linkedin.intro
+
+# customcategory=pinterest=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:pinterest
+# customsubcategory=pinterest=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:pinterest.intro
+
+# customcategory=twitter=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:twitter
+# customsubcategory=twitter=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:twitter.intro
+
+# customcategory=youtube=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:youtube
+# customsubcategory=youtube=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:youtube.intro
+
+# customcategory=vimeo=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:vimeo
+# customsubcategory=vimeo=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:vimeo.intro
+
+# customcategory=tumblr=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:tumblr
+# customsubcategory=tumblr=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:tumblr.intro
+
+# customcategory=imgur=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:imgur
+# customsubcategory=imgur=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:imgur.intro
+
+socialfeed{
+    # cat=general/general/0010; type=boolean; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:general.devmod
+    devmod=0
+
+    # cat=general/general/0020; type=boolean; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:general.ignoreVerifySSL
+    ignoreVerifySSL =
+
+    # cat=facebook/facebook/0010; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:facebook.api.id
+    facebook.api.id=
+    # cat=facebook/facebook/0020; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:facebook.api.secret
+    facebook.api.secret=
+    # cat=facebook/facebook/0030; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:facebook.api.pageaccesstoken
+    facebook.api.pageaccesstoken=
+
+    # cat=instagram/instagram/0010; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:instagram.client.id
+    instagram.client.id=
+    # cat=instagram/instagram/0020; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:instagram.client.secret
+    instagram.client.secret=
+    # cat=instagram/instagram/0030; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:instagram.client.callback
+    instagram.client.callback=
+    # cat=instagram/instagram/0040; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:instagram.client.access_code
+    instagram.client.access_code=
+    # cat=instagram/instagram/0050; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:instagram.client.access_token
+    instagram.client.access_token=
+
+    # cat=linkedin/linkedin/0010; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:linkedin.client.key
+    linkedin.client.key=
+    # cat=linkedin/linkedin/0020; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:linkedin.client.secret
+    linkedin.client.secret=
+    # cat=linkedin/linkedin/0030; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:linkedin.client.callback_url
+    linkedin.client.callback_url=
+    # cat=linkedin/linkedin/0040; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:linkedin.access_token
+    linkedin.access_token=
+
+    # cat=pinterest/pinterest/0010; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:pinterest.app.id
+    pinterest.app.id=
+    # cat=pinterest/pinterest/0020; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:pinterest.app.secret
+    pinterest.app.secret=
+    # cat=pinterest/pinterest/0030; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:pinterest.app.code
+    pinterest.app.code=
+
+    # cat=twitter/twitter/0010; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:twitter.consumer.key
+    twitter.consumer.key=
+    # cat=twitter/twitter/0020; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:twitter.consumer.secret
+    twitter.consumer.secret=
+    # cat=twitter/twitter/0030; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:twitter.oauth.access.token
+    twitter.oauth.access.token=
+    # cat=twitter/twitter/0040; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:twitter.oauth.access.token_secret
+    twitter.oauth.access.token_secret=
+
+    # cat=youtube/youtube/0010; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:youtube.apikey
+    youtube.apikey=
+
+    # cat=vimeo/vimeo/0010; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:vimeo.client.identifier
+    vimeo.client.identifier=
+    # cat=vimeo/vimeo/0020; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:vimeo.client.secret
+    vimeo.client.secret=
+    # cat=vimeo/vimeo/0030; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:vimeo.token
+    vimeo.token=
+
+
+    # cat=tumblr/tumblr/0010; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:tumblr.consumer.key
+    tumblr.consumer.key=
+    # cat=tumblr/tumblr/0020; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:tumblr.consumer.secret
+    tumblr.consumer.secret=
+    # cat=tumblr/tumblr/0030; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:tumblr.token
+    tumblr.token=
+    # cat=tumblr/tumblr/0040; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:tumblr.token_secret
+    tumblr.token_secret=
+
+    # cat=imgur/imgur/0010; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:imgur.client.id
+    imgur.client.id=
+    # cat=imgur/imgur/0020; type=string; label=LLL:EXT:pb_social/Resources/Private/Language/locallang_extconf.xlf:imgur.client.secret
+    imgur.client.secret=
+}
+
+
+

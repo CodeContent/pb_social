@@ -1,0 +1,229 @@
+.tx-pb-social{
+  .pb-list{
+    position: relative;
+    width: 100%;
+    margin: 10px 0 0 -10px;
+
+    .col{
+      float: left;
+      width: 250px;
+    }
+
+    .pb-hidden{
+//      display: none;
+    }
+  }
+
+  .pb-list-item {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 10px 0 0 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+
+    .image{
+      position: absolute;
+      height: 250px;
+      top: 0;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .icon{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 32px;
+      width: 32px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-size: 32px 32px;
+    }
+
+    .text{
+//      display: none;
+      position: absolute;
+      color: #FFFFFF;
+      background-color: rgba(0, 0, 0, 0.35);
+      padding: 10px 10px 25px 10px;
+      height: 80px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      overflow: hidden;
+      font-size: 12px;
+      line-height: 15px;
+      cursor: pointer;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+
+    .additional-info{
+      box-sizing: border-box;
+      position: absolute;
+      color: #ffffff;
+      width: 30px;
+      height: 20px;
+      bottom: 2px;
+      text-align: right;
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: bold;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+      &.info-1{
+        right: 65px;
+      }
+      &.info-2{
+        right: 20px;
+      }
+    }
+
+    .video-overlay{
+      position: absolute;
+      bottom: 95px;
+      left: 95px;
+      width: 64px;
+      height: 64px;
+      opacity: 0.90;
+      cursor: pointer;
+    }
+
+    &[data-type="video"]{
+      .image{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: black;
+      }
+      .video-overlay{
+        top: 95px;
+        bottom: auto;
+      }
+    }
+  }
+
+
+  .pb-list-item-facebook {
+    .placeholder-image{
+      background-image: url("../Icons/Placeholder/fb.jpg");
+    }
+    .icon {
+      background-image: url("../Icons/facebook.png");
+    }
+  }
+
+  .pb-list-item-googleplus {
+    .placeholder-image{
+      background-image: url("../Icons/Placeholder/gplus.jpg");
+    }
+    .icon {
+      background-image: url("../Icons/google+.png");
+    }
+  }
+
+  .pb-list-item-instagram {    
+    .icon {
+    background-image: url("../Icons/instagram.png");
+    }
+  }
+
+  .pb-list-item-linkedin {
+    .placeholder-image{
+      background-image: url("../Icons/Placeholder/linkedin.jpg");
+    }
+    .icon {
+    background-image: url("../Icons/linkedin.png");
+    }
+  }
+
+  .pb-list-item-txnews {
+    .placeholder-image{
+      background-image: url("../Icons/Placeholder/default.jpg");
+    }
+    .icon {
+    background-image: url("../Icons/typo3.png");
+    }
+  }
+
+  .pb-list-item-pinterest {    
+    .icon {
+    background-image: url("../Icons/pinterest.png");
+    }
+  }
+
+  .pb-list-item-tumblr {    
+    .placeholder-image{
+      background-image: url("../Icons/Placeholder/tumblr.jpg");
+    }
+    .icon {
+    background-image: url("../Icons/tumblr.png");
+    }
+  }
+
+  .pb-list-item-twitter {
+    .placeholder-image{
+      background-image: url("../Icons/Placeholder/twitter.jpg");
+    }
+    .icon {
+    background-image: url("../Icons/twitter.png");
+    }
+  }
+
+  .pb-list-item-imgur {    
+    .icon {
+    background-image: url("../Icons/imgur.png");
+    }
+  }
+
+  .pb-list-item-youtube {
+    .placeholder-image{
+      background-image: url("../Icons/Placeholder/yt.jpg");
+    }
+    .icon {
+    background-image: url("../Icons/youtube.png");
+    }
+  }
+
+  .pb-list-item-vimeo {
+    .placeholder-image{
+      background-image: url("../Icons/Placeholder/vimeo.png");
+    }
+    .icon {
+    background-image: url("../Icons/vimeo.png");
+    }
+  }
+
+
+  .button{
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 30px;
+    width: 300px;
+    padding-top: 15px;
+    border: 1px solid black;
+    &.loading{
+      border: none;
+      color: white;
+      background-color: darkgray;
+      cursor: progress;
+    }
+    &.pb-disabled{
+      visibility: hidden;
+    }
+    &__wrap{
+      float: left;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .pb-hide-initial{
+    display: none;
+  }
+}

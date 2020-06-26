@@ -1,0 +1,15 @@
+<div class="pb-list-item pb-list-item-tumblr pb-hidden" data-type="{feed.raw.type}" data-url="{feed.link}">
+	<f:if condition="{feed.image}">
+		<f:then>
+			<div class="image" style="background-image: url({feed.image})"></div>
+		</f:then>
+		<f:else>
+			<div class="image placeholder-image"></div>
+		</f:else>
+	</f:if>
+	<div class="icon"></div>
+	<f:if condition="{feed.text}">
+		<span class="text">{feed.text}</span>
+	</f:if>
+	<a class="additional-info info-2" href="{feed.link}">{feed.raw.note_count}</a>
+</div>

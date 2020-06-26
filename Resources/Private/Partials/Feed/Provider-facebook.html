@@ -1,0 +1,47 @@
+<f:if condition="{0:feed.raw.type}!={0:'status'}">
+
+	<f:comment>
+		Hint: use this line for displaying debug output of api return values. Please do this in development area, only.
+		<f:debug>{feed.raw}</f:debug>
+
+		You can change list of parameters in TypoScript Constants plugin.tx_pbsocial.settings.facebook.requestParameterList.
+		Important: "id", "link" and "message" are always prepended in this list (so do not repeat).
+		To pull out your own parameter according to https://developers.facebook.com/docs/workplace/integrations/custom-integrations/reference/,
+		please fill in here as well, always prepending "feed.raw": {feed.raw.my_facebook_parameter_i_desire}
+
+		Hint: In TypoScript Setup you as well can add a parameter by using "addToList()" e.g.: plugin.tx_pbsocial.settings.facebook.requestParameterList := addToList(status_type)
+	</f:comment>
+
+	<div class="pb-list-item pb-list-item-facebook pb-hidden" data-type="{feed.raw.type}" data-id="{feed.id}" data-url="{feed.link}">
+
+		<f:if condition="{feed.raw.picture}">
+			<f:then>
+                <f:if condition="{fb_full_res}">
+                    <f:then>
+                        <div class="image full_resolution" data-image-id="{feed.raw.full_picture}" style="background-image: url({feed.raw.full_picture})"></div>
+                    </f:then>
+                    <f:else>
+                        <div class="image" data-image-id="{feed.raw.picture}" style="background-image: url({feed.raw.picture})"></div>
+                    </f:else>
+                </f:if>
+			</f:then>
+			<f:else>
+                <div class="image placeholder-image"></div>
+            </f:else>
+		</f:if>
+
+		<f:if condition="{feed.text}">
+			<span class="text">
+				<f:format.crop maxCharacters="{settings.textTrimLength}">
+					{feed.raw.message}
+				</f:format.crop>
+			</span>
+		</f:if>
+
+		<div class="icon"></div>
+
+		<f:if condition="{0:feed.raw.type}=={0:'video'}">
+			<img class="video-overlay" src="/typo3conf/ext/pb_social/Resources/Public/Icons/play_icon.png"/>
+		</f:if>
+	</div>
+</f:if>

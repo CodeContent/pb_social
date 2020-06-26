@@ -1,0 +1,16 @@
+<div class="pb-list-item pb-list-item-youtube pb-hidden" data-type="{feed.raw.type}" data-id="{feed.id}" data-url="{feed.link}">
+    <f:if condition="{feed.image}">
+        <f:then>
+            <div class="image" style="background-image: url({feed.image})"></div>
+        </f:then>
+        <f:else>
+            <div class="image placeholder-image"></div>
+        </f:else>
+    </f:if>
+
+    <div class="icon"></div>
+    <f:if condition="{feed.text}">
+        <span class="text">{feed.text}</span>
+    </f:if>
+    <img class="video-overlay" src="/typo3conf/ext/pb_social/Resources/Public/Icons/play_icon.png"/>
+</div>

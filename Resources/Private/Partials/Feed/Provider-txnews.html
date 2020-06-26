@@ -1,0 +1,25 @@
+<div class="pb-list-item pb-list-item-txnews pb-hidden"
+     data-type="{feed.raw.type}"
+     data-id="{feed.id}"
+     data-url="{f:uri.page( pageUid: feed.link, absolute: 1, additionalParams: '{tx_news_pi1: {news: feed.id, controller: \'News\', action: \'detail\'}}' )}">
+    <f:if condition="{feed.Image}">
+        <f:then>
+            <div class="image" style="background-image: url('{f:uri.image(src: '{feed.Image}', minWidth: 250, maxWidth: 250)}');"></div>
+        </f:then>
+        <f:else>
+            <div class="image placeholder-image" style="background-image: url('{f:uri.image(src: '{settings.txnewsDummyImage}')}');"></div>
+        </f:else>
+    </f:if>
+
+    <div class="icon" style="background-image: url('{f:uri.image(src: '{settings.txnewsIconPath}')}');"></div>
+    <a class="additional-info info-1" href="{feed.Link}">{feed.raw.author}</a>
+    <a class="additional-info info-2" href="{feed.Link}">{f:format.date(format: '%d.%m.%Y', date: '{feed.Raw.dateTime}')}</a>
+    <f:if condition="{feed.Text}">
+        <f:comment>
+            To get {feed.raw.body}, you will have html p-tags wrapped done by tx_news extension in database. To get rid of &lt;p&gt; crypto
+                you will make use of -> f:format.raw() -> f:format.stripTags().
+            To crop to maximum characters of 100 you use -> f:format.crop(maxCharacters: 100)
+        </f:comment>
+        <span class="text">{feed.Text} <br/> {feed.raw.body -> f:format.raw() -> f:format.stripTags() -> f:format.crop(maxCharacters: settings.txnewsCropBodytextTeaser)}</span>
+    </f:if>
+</div>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-11-28T16:13:07Z" product-name="pb_social">
+		<header/>
+		<body>
+			<trans-unit id="tx_pbsocial_domain_model_item">
+				<source>Item</source>
+				<target>Item</target>
+			</trans-unit>
+
+			<trans-unit id="tx_pbsocial_domain_model_item.type">
+				<source>Type</source>
+				<target>Type</target>
+			</trans-unit>
+			<trans-unit id="tx_pbsocial_domain_model_item.cacheidentifier">
+				<source>Cacheidentifier</source>
+				<target>Cacheidentifier</target>
+			</trans-unit>
+			<trans-unit id="tx_pbsocial_domain_model_item.date">
+				<source>Date</source>
+				<target>Datum</target>
+			</trans-unit>
+			<trans-unit id="tx_pbsocial_domain_model_item.result">
+				<source>Result</source>
+				<target>Ergebnis</target>
+			</trans-unit>
+
+			<trans-unit id="tx_pbsocial_clear_cache">
+				<source>Clear pb_social cache</source>
+				<target>Clear pb_social cache</target>
+			</trans-unit>
+			<trans-unit id="tx_pbsocial_clear_cache_description">
+				<source>Clear cache of extension pb_social and its api results. Doing this any pb_social network feed has to be recalled (by front end reload of pages containing pb_social plugins or your pb_social scheduler task).
+					Consider individual quantity of api request limitations before clearing cache to recall feed.</source>
+				<target>Cache der Erweiterung pb_social und api Abfrageergebnisse löschen. Dabei muss jeder Netzwerk-Stream neu geschrieben werden (Frontend der entsprechenden Seiten aufrufen oder Scheduler-Task).
+					Bitte berücksichtigen Sie die möglichen Limitierungen bei den Api-Anfragen der gewünschen Netwerke.</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,17 @@
+<div class="pb-list-item pb-list-item-vimeo pb-hidden" data-type="{feed.raw.type}" data-id="{feed.id}" data-url="{feed.id}">
+    <f:if condition="{feed.image}">
+        <f:then>
+            <div class="image" style="background-image: url({feed.image})"></div>
+        </f:then>
+        <f:else>
+            <div class="image placeholder-image"></div>
+        </f:else>
+    </f:if>
+    <div class="icon"></div>
+    <a class="additional-info info-1" href="{feed.link}">{feed.raw.metadata.connections.comments.total}</a>
+    <a class="additional-info info-2" href="{feed.link}">{feed.raw.metadata.connections.likes.total}</a>
+    <f:if condition="{feed.text}">
+        <span class="text">{feed.text}</span>
+    </f:if>
+    <img class="video-overlay" src="/typo3conf/ext/pb_social/Resources/Public/Icons/play_icon.png"/>
+</div>

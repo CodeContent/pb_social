@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2019-05-17T13:19:00Z" product-name="pb_social">
+        <header/>
+        <body>
+            <trans-unit id="flexform.tab.general.caption">
+                <source>General Settings</source>
+                <target state="translated">Grundlegende Einstellungen</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.general.sysLogThisPlugin">
+                <source>Turn on TYPO3 Backend logging (sys_log) for this plugin</source>
+                <target>Protokoll für dieses Plugin einschalten (sys_log) </target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.general.updatingFeeds">
+                <source>Feed update interval (in minutes)</source>
+                <target state="translated">Wie oft sollen die Feeds aktualisiert werden? (in Minuten)</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.general.requestLimit">
+                <source>Request limit for posts (small amount -> fast response)</source>
+                <target state="translated">Anzahl der Posts pro Anbieter (je weniger, desto schneller arbeitet die Extension)</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.general.showOnlyImages">
+                <source>Show only posts with pictures</source>
+                <target state="translated">Nur Posts anzeigen, die Bilder beinhalten</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.general.trimText">
+                <source>Trim text after reaching this letter limit</source>
+                <target state="translated">Den Text nach einer bestimmten Anzahl von Zeichen abschneiden</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.facebook.caption">
+                <source>Facebook</source>
+                <target state="translated">Facebook</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.facebook.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.facebook.facebookPageID">
+                <source>Facebook facebookPageID. (Enter one, only)</source>
+                <target>Facebock Seiten ID (facebookPageID). Bitte nur eine ID eintragen.</target>
+            </trans-unit>
+
+
+
+            <trans-unit id="flexform.tab.facebook.edge">
+                <source>Facebook edge</source>
+                <target state="translated">Facebook edge</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.facebook.edge.feed">
+                <source>Feed: Der Beitrags-Feed (einschließlich Status-Updates) und von dieser Seite oder anderen Personen auf dieser Seite veröffentlichte Links.</source>
+            </trans-unit>
+            <trans-unit id="flexform.tab.facebook.edge.posts">
+                <source>Posts: Zeigt nur die Beiträge an, die von dieser Seite veröffentlicht wurden.</source>
+            </trans-unit>
+            <trans-unit id="flexform.tab.facebook.edge.tagged">
+                <source>Tagged: Zeigt alle öffentlichen Beiträge an, in denen die Seite markiert wurde.</source>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.facebook.fullpicture">
+                <source>Load full sized picture</source>
+                <target state="translated">Bilder in voller Größe laden</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.facebook.facebookPluginKeyfieldEnabled">
+                <source>Use individual credentials instead of global extension configuration</source>
+                <target>Eigene Schlüssel für dieses Plugin anstatt der globalen Schlüssel in der Extension Konfiguration</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.instagram.caption">
+                <source>Instagram</source>
+                <target state="translated">Instagram</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.instagram.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.instagram.postfilter">
+                <source>Filter posts by given hashtag - if you specify search ID and hashtags, check this box to show only posts with the given hashtag(s)</source>
+                <target state="translated">Posts nach Hashtag filtern - wenn search ID und Hashtag angegeben wurden, werden nur die Posts mit dem angegebenen Hashtag ausgegeben</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.instagram.searchID">
+                <source>Instagram search IDs. Use commas to show more than one ID</source>
+                <target state="translated">Instagram IDs der Seiten, die angezeigt werden sollen. Verwenden Sie Kommas, um mehrere Seiten anzuzeigen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.instagram.hashtag">
+                <source>Output most up to date Images with a specific hashtag. Use commas to show more than one.</source>
+                <target state="translated">Die aktuellsten Bilder mit einem bestimmten Hashtag anzeigen. Verwenden Sie Kommas, um mehrere anzuzeigen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.instagram.instagramPluginKeyfieldEnabled">
+                <source>Use individual credentials instead of global extension configuration</source>
+                <target>Eigene Schlüssel für dieses Plugin anstatt der globalen Schlüssel in der Extension Konfiguration</target>
+            </trans-unit>
+
+
+            <trans-unit id="flexform.tab.linkedin.caption">
+                <source>LinkedIn</source>
+                <target state="translated">LinkedIn</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.linkedin.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.linkedin.companyIds">
+                <source>LinkedIn company ID. You need to be administrator of the given company page(s)!</source>
+                <target>LinkedIn Unternehmens-ID. Sie müssen Administrator der LinkedIn-Unternehmensseite(n) sein!</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.linkedin.linkedinFilterChoice">
+                <source>Filter settings</source>
+                <target state="translated">Filter</target>
+            </trans-unit>
+             <trans-unit id="flexform.tab.linkedin.linkedinFilterChoiceNone">
+                <source>None</source>
+                <target state="translated">None</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.linkedin.jobPostings">
+                <source>Show job postings</source>
+                <target state="translated">Job-Postings anzeigen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.linkedin.newProducts">
+                <source>Show product postings</source>
+                <target state="translated">Produkt-Postings anzeigen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.linkedin.statusUpdates">
+                <source>Show status updates</source>
+                <target state="translated">Status-Updates anzeigen</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.facebook.facebookPluginKeyfieldEnabled">
+                <source>Use individual credentials instead of global extension configuration</source>
+                <target>Eigene Schlüssel für dieses Plugin anstatt der globalen Schlüssel in der Extension Konfiguration</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.pinterest.caption">
+                <source>Pinterest</source>
+                <target state="translated">Pinterest</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.pinterest.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.pinterest.username">
+                <source>Show pins of Pinterest user (please add the board at the bottom field)</source>
+                <target state="translated">Pins vom folgenden User anzeigen (unten bitte noch die Pinnwand angeben)</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.pinterest.boardname">
+                <source>Show pins of a specific Pinterest board of a user (needs username input at the upper field)</source>
+                <target state="translated">Pins von einer Pinnwand eines Users anzeigen (das Feld des Nutzernamens muss ausgefüllt sein)</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.pinterest.pinterestPluginKeyfieldEnabled">
+                <source>Use individual credentials instead of global extension configuration</source>
+                <target>Eigene Schlüssel für dieses Plugin anstatt der globalen Schlüssel in der Extension Konfiguration</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.twitter.caption">
+                <source>Twitter</source>
+                <target state="translated">Twitter</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.twitter.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.twitter.hideRetweets">
+                <source>Hide Retweets</source>
+                <target state="translated">Retweets verstecken?</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.twitter.showOnlyImages">
+                <source>Show only tweets with images</source>
+                <target state="translated">Nur Tweets anzeigen, die Bilder beinhalten</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.twitter.searchID">
+                <source>Twitter search field values (e.g. #plusB,@plusB,...). Use commas to show tweets from more than one page</source>
+                <target state="translated">Tweets anzeigen, die bestimmte Wörter beinhalten (z.b. plusB). Verwenden Sie Kommas, um Tweets mehrerer Seiten anzuzeigen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.twitter.profilePosts">
+                <source>Show tweets of specific profiles. Use commas to show more than one</source>
+                <target state="translated">Zeige Tweets von bestimmten Twitter-Profilen. Verwenden Sie Kommas, um Tweets mehrerer Profile anzuzeigen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.twitter.language">
+                <source>(Optional) Show tweets in a specific language (for example: use "de" for tweets in german language). For a list look at the ISO 639-1 codes on http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes</source>
+                <target state="translated">(Optional) Zeige Tweets nur in der entsprechenden Sprache an (z.B. "de" für Tweets, die in der deutschen Sprache sind). Für eine Liste, schaue auf die ISO 639-1 Codes auf http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.twitter.geocode">
+                <source>(Optional) Returns tweets by users located within a given radius of the given latitude/longitude. Example value: "37.781157,-122.398720,1mi". the last parameter is the radius ("1mi" stands for one mile, use "km" for kilometers). Use http://mygeoposition.com/ to find your preferred geolocation</source>
+                <target state="translated">(Optional) Zeige Tweets nach der Geolocation innerhalb eines bestimmten Radius an. Z.B.: "37.781157,-122.398720,1mi". Der letzte Parameter ist der Radius ("1mi" steht für 1 Meile. Benutze "km" für Kilometer). Um eine Geolocation herauszufinden, nutze z.B. http://mygeoposition.com/</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.twitter.https">
+                <source>Include images with https</source>
+                <target state="translated">Einbinden der Bilder URLs mit https</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.twitter.twitterPluginKeyfieldEnabled">
+                <source>Use individual credentials instead of global extension configuration</source>
+                <target>Eigene Schlüssel für dieses Plugin anstatt der globalen Schlüssel in der Extension Konfiguration</target>
+            </trans-unit>
+
+
+            <trans-unit id="socialfeed_wizard.title">
+                <source>Social Media Streams</source>
+                <target state="translated">Social Media Streams</target>
+            </trans-unit>
+            <trans-unit id="socialfeed_wizard.description">
+                <source>Displays feeds from social media platforms</source>
+                <target state="translated">Zeigt Feeds von Social Media Plattformen an</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.youtube.caption">
+                <source>Youtube</source>
+                <target state="translated">Youtube</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.searchword">
+                <source>Youtube searchword. Use commas to show more than one</source>
+                <target state="translated">Youtube Suchwort. Verwenden Sie Kommas, um mehrere Seiten anzuzeigen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.playlist">
+                <source>Youtube playlist. If set, searchword will be ignored</source>
+                <target state="translated">Youtube playlist. Wenn gesetzt wird das Suchwort ignoriert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.channel">
+                <source>Youtube channel-id. If set, searchword &amp; playlist will be ignored</source>
+                <target state="translated">Youtube Channel-ID. Wenn gesetzt wird das Suchwort &amp; die Playlist ignoriert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.lang">
+                <source>(Optional) Show videos in a specific language (for example: use "de" for videos in german language). For a list look at the ISO 639-1 codes on http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes</source>
+                <target state="translated">(Optional) Zeige Videos nur in der entsprechenden Sprache an (z.B. "de" für Videos, die in der deutschen Sprache sind). Für eine Liste, schaue auf die ISO 639-1 Codes auf http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.type">
+                <source>(Optional) Restricts search on a particular type of resource. Default is "video,channel,playlist". "video,playlist" e.g. excludes channels from the result.</source>
+                <target state="translated">(Optional) Beschränkt die Suche auf gewisse Ergebnis-Typen. Der default-Wert ist "video,channel,playlist". "video,playlist" z.B. liefert keine Kanäle zurück.</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.order">
+                <source>(Optional) Order of posts (default is relevance)</source>
+                <target state="translated">(Optional) Sortierung der Ergebnisse (default ist "relevance")</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.order.relevance">
+                <source>relevance</source>
+                <target state="translated">Relevanz</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.order.date">
+                <source>date</source>
+                <target state="translated">Datum</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.order.viewCount">
+                <source>viewCount</source>
+                <target state="translated">viewCount</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.order.videoCount">
+                <source>videoCount (order in channel)</source>
+                <target state="translated">videoCount (Sortierung innerhalb des Kanals)</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.order.title">
+                <source>title</source>
+                <target state="translated">Titel</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.youtube.order.rating">
+                <source>rating</source>
+                <target state="translated">Bewertung</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.youtube.youtubePluginKeyfieldEnabled">
+                <source>Use individual credentials instead of global extension configuration</source>
+                <target>Eigene Schlüssel für dieses Plugin anstatt der globalen Schlüssel in der Extension Konfiguration</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.vimeo.caption">
+                <source>Vimeo</source>
+                <target state="translated">Vimeo</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.vimeo.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.vimeo.channel">
+                <source>Channel ID to display. Show all your videos with "me".</source>
+                <target state="translated">Channel ID, die angezeigt werden soll. Alle eigenen Videos können durch Eingabe von "me" ausgegeben werden.</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.vimeo.vimeoPluginKeyfieldEnabled">
+                <source>Use individual credentials instead of global extension configuration</source>
+                <target>Eigene Schlüssel für dieses Plugin anstatt der globalen Schlüssel in der Extension Konfiguration</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.tumblr.caption">
+                <source>Tumblr</source>
+                <target state="translated">Tumblr</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.tumblr.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.tumblr.searchID">
+                <source>Tumblr blog names. For your own Dashboard use "MYDASHBOARD" as value. Use commas to show more than one blog</source>
+                <target state="translated">Tumblr Blognamen, die angezeigt werden sollen. Für das eigene Dashboard "MYDASHBOARD" eingeben. Verwenden Sie Kommas, um mehrere Blogs anzuzeigen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.tumblr.hashTag">
+                <source>Search the above-mentioned Tumblr blog names for a specific hashtag</source>
+                <target state="translated">Die obengenannten Tumblr Blogs nach einem bestimmten Hashtag durchsuchen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.tumblr.showOnlyImages">
+                <source>Show only posts with images</source>
+                <target state="translated">Nur Posts anzeigen, die Bilder beinhalten</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.tumblr.tumblrPluginKeyfieldEnabled">
+                <source>Use individual credentials instead of global extension configuration</source>
+                <target>Eigene Schlüssel für dieses Plugin anstatt der globalen Schlüssel in der Extension Konfiguration</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.imgur.caption">
+                <source>Imgur</source>
+                <target state="translated">Imgur</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.imgur.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.imgur.User">
+                <source>Show Images of specific Users. Use commas to show more than one</source>
+                <target state="translated">Bilder von bestimmten Nutzern anzeigen. Verwenden Sie Kommas, um Bilder mehrerer Nutzer anzuzeigen</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.imgur.tag">
+                <source>Show Images with a specific Tag. Use commas for more than one tag </source>
+                <target state="translated">Bilder mit einem bestimmten Tag anzeigen. Verwenden Sie Kommas für mehrere Tags</target>
+            </trans-unit>
+
+            <trans-unit id="flexform.tab.imgur.imgurPluginKeyfieldEnabled">
+                <source>Use individual credentials instead of global extension configuration</source>
+                <target>Eigene Schlüssel für dieses Plugin anstatt der globalen Schlüssel in der Extension Konfiguration</target>
+            </trans-unit>
+
+            <!-- tx_news -->
+            <trans-unit id="flexform.tab.news.caption">
+                <source>News</source>
+                <target state="translated">News</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.news.active">
+                <source>Active</source>
+                <target state="translated">Ausgabe aktiviert</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.news.useHttps">
+                <source>Generate https links (check if your site uses https protocol)</source>
+                <target state="translated">Links mit https generieren (auswählen, wenn Ihre Webseite https nutzt)</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.news.newsDetailPageUid">
+                <source>uid of news detail page</source>
+                <target state="translated">uid der News-Detailseite</target>
+            </trans-unit>
+            <trans-unit id="flexform.tab.news.categories">
+                <source>Define the category of news. Please provide the category's pid (hover over category name). Leaving this empty will output all news.</source>
+                <target state="translated">News-Kategorie. Bitte die pid der jeweiligen Kategorie angeben (hover über den Namen der Kategorie) -  Bleibt dieses Feld leer, werden alle News ausgegeben.</target>
+            </trans-unit>
+
+        </body>
+    </file>
+</xliff>
