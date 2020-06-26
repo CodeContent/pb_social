@@ -1,0 +1,35 @@
+
+plugin.tx_pbsocial {
+	view {
+		# cat=plugin.tx_pbsocial/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:pb_social/Resources/Private/Templates/
+		# cat=plugin.tx_pbsocial/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:pb_social/Resources/Private/Partials/
+		# cat=plugin.tx_pbsocial/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:pb_social/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_pbsocial//a; type=string; label=Default storage PID
+		storagePid =
+	}
+    settings{
+        load-jquery = 1
+		cacheLifetime = 3600
+		facebook {
+			# cat=plugin.tx_pbsocial.settings.facebook//a; type)string; label=Comma separated List for Facebook request. Please consider change in Partials\Feed\Provider-facebook.html as well! Only use in case you know, what you are doing.
+			requestParameterList = picture, created_time, full_picture
+		}
+
+		# if you include tx_news items into your feed, you have two images: a small icon like any feed of this extension top left corner of teaser square `txnewsIconPath`
+		# and the background image `txnewsDummyImage`. You can use any file path you want, eg /typo3conf/ext/pb_social/Resources/Public/Icons/typo3.png
+		txnewsIconPath = EXT:pb_social/Resources/Public/Icons/typo3.png
+		# use it from tx-news extension: EXT:news/Resources/Public/Icons/Extension.svg
+		# or use our legacy icon: EXT:pb_social/Resources/Public/Icons/typo3.png
+
+		txnewsDummyImage = EXT:pb_social/Resources/Public/Icons/Placeholder/default.jpg
+		# default: EXT:pb_social/Resources/Public/Icons/Placeholder/default.jpg ... or whatever you want
+
+		# if you want to use body text in tx-news feed teaser and if you want to crop it in your fluid template: {feed.raw.body -> f:format.crop(maxCharacters: settings.txnewsCropBodytextTeaser)}
+		txnewsCropBodytextTeaser = 100
+	}
+}

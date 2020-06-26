@@ -1,0 +1,48 @@
+{
+  "name": "plusb/pb_social",
+  "version": "1.5.0",
+  "type": "typo3-cms-extension",
+  "description": "Pb_social enables you to get posts from social media networks into your TYPO3 system. Currently supported social media networks are: Facebook, Imgur, Instagram, LinkedIn, Pinterest, Tumblr, Twitter, YouTube, Vimeo and TYPO3 Extension tx_news",
+  "homepage": "https://www.plusb.de",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "TYPO3 CMS",
+    "Social Media Streams",
+	"plus B",
+	"plusB",
+	"pb_social",
+    "facebook",
+    "imgur",
+    "instagram",
+    "linkedin",
+    "pinterest",
+    "tumblr",
+    "twitter",
+    "youtube",
+    "vimeo",
+    "tx_news"
+  ],
+  "authors": [
+    {
+      "name": "plus B: Mikolaj Jedrzejewski, Robert Becker, Sergej Junker, Arend Maubach, Patricia Bartel, Ramon Mohi, Kai Lorenz",
+      "role": "Developer",
+      "homepage": "https://www.plusb.de"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^7.6 || ^8.7 || ^9.5",
+    "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "PlusB\\PbSocial\\": "Classes"
+    },
+    "classmap": [
+      "Resources/Private/Libs"
+    ]
+  },
+  "replace": {
+    "plusb/pb_social": "self.version",
+    "typo3-ter/pb_social": "self.version"
+  }
+}
