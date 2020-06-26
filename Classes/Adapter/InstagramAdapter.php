@@ -3,11 +3,12 @@
 namespace PlusB\PbSocial\Adapter;
 
 $extensionPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('pb_social') . 'Resources/Private/Libs/';
-@include 'phar://' .  $extensionPath . 'instagram.phar/src/Instagram.php';
+@require $extensionPath . 'instagram/src/InstagramBasicDisplay.php';
 
-use MetzWeb\Instagram\Instagram;
+use EspressoDev\InstagramBasicDisplay\InstagramBasicDisplay;
 use PlusB\PbSocial\Domain\Model\Feed;
 use PlusB\PbSocial\Domain\Model\Item;
+
 
 /***************************************************************
  *
@@ -15,6 +16,7 @@ use PlusB\PbSocial\Domain\Model\Item;
  *
  *  (c) 2016 Ramon Mohi <rm@plusb.de>, plus B
  *  (c) 2019 Arend Maubach <am@plusb.de>, plus B
+ *  (c) 2020 Martin Kästner <kaestner@code-content.de>, Code & Content GmbH
  *
  *  All rights reserved
  *
@@ -136,8 +138,13 @@ class InstagramAdapter extends SocialMediaAdapter
         }
         /* validated */
 
-        $this->api =  new Instagram(array('apiKey' => $this->apiKey, 'apiSecret' => $this->apiSecret, 'apiCallback' => $this->apiCallback));
+        $this->api =  new InstagramBasicDisplay([
+                'appId' => $this->apiKey,
+                'appSecret' => $this->apiSecret,
+                'redirectUri' => $this->apiCallback
+        ]);
         $this->api->setAccessToken($this->token);
+
     }
 
     /**
@@ -158,8 +165,8 @@ class InstagramAdapter extends SocialMediaAdapter
         $this->setToken($parameter['token']);
         $this->setOptions($parameter['options']);
 
-        if (empty($this->apiKey) || empty($this->apiSecret) ||  empty($this->apiCallback)||  empty($this->code)||  empty($this->token)) {
-            $validationMessage = 'credentials not set: '
+        if (empty($this->apiKey) || empty($this->apiSecret) ||  empty($this->apiCallback)||  empty($this->token)) {
+            $this->validationMessage = 'credentials not set: '
                 . (empty($this->apiKey)?'apiKey ':'')
                 . (empty($this->apiSecret)?'apiSecret ':'')
                 . (empty($this->apiCallback)?'apiCallback ':'')
@@ -354,15 +361,19 @@ class InstagramAdapter extends SocialMediaAdapter
 
                 if (is_array($item->getResult()->data)) {
                     foreach ($item->getResult()->data as $rawFeed) {
-                        if ($options->onlyWithPicture && empty($rawFeed->images->standard_resolution->url)) {
+                        if ($options->onlyWithPicture && empty($rawFeed->media_url) && empty($rawFeed->thumbnail_url)) {
                             continue;
                         }
                         $feed = new Feed(self::TYPE, $rawFeed);
                         $feed->setId($rawFeed->id);
-                        $feed->setText($this->trim_text($rawFeed->caption->text, $options->textTrimLength, true));
-                        $feed->setImage($rawFeed->images->standard_resolution->url);
-                        $feed->setLink($rawFeed->link);
-                        $feed->setTimeStampTicks($rawFeed->created_time);
+                        $feed->setText($this->trim_text($rawFeed->caption, $options->textTrimLength, true));
+                        if ($rawFeed->media_type == 'VIDEO') {
+                            $feed->setImage($rawFeed->thumbnail_url);
+                        } else {
+                            $feed->setImage($rawFeed->media_url);
+                        }
+                        $feed->setLink($rawFeed->permalink);
+                        $feed->setTimeStampTicks($rawFeed->timestamp);
                         $feedArray[] = $feed;
                     }
                 }
